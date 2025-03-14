@@ -175,19 +175,19 @@ cp -rf ../../kiddin9/luci-app-rtbwmon/* luci-app-rtbwmon
 # svn export https://github.com/jerrykuku/lua-maxminddb/trunk lua-maxminddb
 # svn export https://github.com/jerrykuku/luci-app-vssr/trunk luci-app-vssr
 #OpenClash
-mkdir luci-app-openclash
-cp -rf ../../kiddin9/luci-app-openclash/* luci-app-openclash
+# mkdir luci-app-openclash
+# cp -rf ../../kiddin9/luci-app-openclash/* luci-app-openclash
 #加入打开Clash核心
-chmod -R a+x $GITHUB_WORKSPACE/scripts/preset-clash-core.sh
-if [ "$1" = "rk33xx" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
-elif [ "$1" = "rk35xx" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
-elif [ "$1" = "x86" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh amd64
-elif [ "$1" = "x86-alpha" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh amd64    
-fi
+# chmod -R a+x $GITHUB_WORKSPACE/scripts/preset-clash-core.sh
+# if [ "$1" = "rk33xx" ]; then
+#    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
+# elif [ "$1" = "rk35xx" ]; then
+#    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
+# elif [ "$1" = "x86" ]; then
+#    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh amd64
+# elif [ "$1" = "x86-alpha" ]; then
+#    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh amd64    
+# fi
 #homeproxy
 # mkdir luci-app-homeproxy
 # cp -rf ../../kiddin9/luci-app-homeproxy/* luci-app-homeproxy
@@ -200,12 +200,12 @@ fi
 # sed -i 's/拦截DNS服务器/拦截DNS服务器（默认用户名和密码均为root）/' luci-app-adguardhome/po/zh_Hans/adguardhome.po
 #sed -i 's/+PACKAGE_$(PKG_NAME)_INCLUDE_binary:adguardhome//' luci-app-adguardhome/Makefile
 #ADGuardHome（kenzok8）
-# svn export https://github.com/kenzok8/openwrt-packages/trunk/adguardhome
-# svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
-# svn export https://github.com/Siriling/打开WRT-MyConfig/trunk/configs/lede/general/applications/luci-app-adguardhome temp/luci-app-adguardhome
-# cp -rf temp/luci-app-adguardhome/* luci-app-adguardhome
-# sed -i 's/默认账号和密码均为：admin/默认用户名和密码均为root/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
-# sed -i 's/网页管理账号和密码:admin ,端口:/端口/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
+svn export https://github.com/kenzok8/openwrt-packages/trunk/adguardhome
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
+svn export https://github.com/Siriling/打开WRT-MyConfig/trunk/configs/lede/general/applications/luci-app-adguardhome temp/luci-app-adguardhome
+cp -rf temp/luci-app-adguardhome/* luci-app-adguardhome
+sed -i 's/默认账号和密码均为：admin/默认用户名和密码均为root/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
+sed -i 's/网页管理账号和密码:admin ,端口:/端口/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
 #dnsfilter
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-dnsfilter
 #ikoolproxy
@@ -284,7 +284,7 @@ popd
 # 添加第三方应用
 echo "
 # 系统相关应用
-CONFIG_PACKAGE_luci-app-poweroff=y
+# CONFIG_PACKAGE_luci-app-poweroff=y
 CONFIG_PACKAGE_luci-app-fileassistant=y
 # CONFIG_PACKAGE_luci-app-guest-wifi=y
 CONFIG_PACKAGE_luci-app-onliner=y
@@ -362,7 +362,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus=y
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Server=y
 
 #Openclash
-CONFIG_PACKAGE_luci-app-openclash=y
+# CONFIG_PACKAGE_luci-app-openclash=y
 # CONFIG_PACKAGE_luci-app-homeproxy=y
 
 # 去广告应用
