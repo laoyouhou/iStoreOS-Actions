@@ -36,11 +36,11 @@ jobs:
         ARCHITECTURE:
          # - rk33xx
          # - rk35xx
-          - x86-alpha
+         - x86-alpha
         os:
           - ubuntu-22.04
        # include:
-         # - REPO_BRANCH: istoreos-23.05
+         # - REPO_BRANCH: istoreos-24.10
            # ARCHITECTURE: x86-alpha
            # os: ubuntu-22.04
 
