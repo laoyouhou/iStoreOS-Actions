@@ -115,8 +115,8 @@ pushd package/community
 # mkdir luci-app-guest-wifi
 # cp -rf ../../kiddin9/luci-app-guest-wifi/* luci-app-guest-wifi
 #Onliner
-mkdir luci-app-onliner
-cp -rf ../../kiddin9/luci-app-onliner/* luci-app-onliner
+# mkdir luci-app-onliner
+# cp -rf ../../kiddin9/luci-app-onliner/* luci-app-onliner
 #Eqos（iStoreOS已有）
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos
 #Wolplus（已有Wol）
