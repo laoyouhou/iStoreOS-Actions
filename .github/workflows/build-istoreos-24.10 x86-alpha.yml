@@ -267,7 +267,7 @@ jobs:
 
         👤 用户名: root
 
-        🔒 密码: password " >> release.txt
+        🔒 密码: 无 " >> release.txt
         echo "::set-output name=status::success"
 
     - name: 自动发布固件到 Releases
