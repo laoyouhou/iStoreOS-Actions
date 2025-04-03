@@ -67,3 +67,7 @@
 - [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=s71557/iStoreOS-Actions&type=Timeline)](https://www.star-history.com/#s71557/iStoreOS-Actions&Timeline)
